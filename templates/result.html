@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prediction Result</h1>
+
+      <div class="result-box">
+        <p class="result-label">Predicted Fire Weather Index (FWI)</p>
+        <h2 class="result-value">{{ prediction }}</h2>
+        <p class="result-hint">Higher FWI = Greater fire danger</p>
+      </div>
+
+      <a href="/" class="back-btn">← Go Back</a>
+    </div>
+  </body>
+</html>
